@@ -1,5 +1,6 @@
 """Step 3: voice the dialogue with ElevenLabs and master a single MP3 with ffmpeg."""
 
+import hashlib
 import json
 import re
 import subprocess
@@ -102,19 +103,41 @@ def master(parts: list[Path], out_path: Path) -> None:
     Path(listing.name).unlink(missing_ok=True)
 
 
+def check_quota(client, needed_chars: int) -> None:
+    """Fail before spending anything if the ElevenLabs plan can't cover this episode (1 credit ≈ 1 character)."""
+    try:
+        sub = client.user.subscription.get()
+    except Exception as exc:  # noqa: BLE001 — keys without the user_read permission can't see their balance
+        print(f"[tts] couldn't read ElevenLabs credit balance ({getattr(exc, 'status_code', exc)}); continuing")
+        return
+    remaining = sub.character_limit - sub.character_count
+    print(f"[tts] ElevenLabs {sub.tier}: {remaining:,} of {sub.character_limit:,} credits left, episode needs ~{needed_chars:,}")
+    if remaining < needed_chars:
+        raise RuntimeError(f"Not enough ElevenLabs credits: {remaining:,} left, ~{needed_chars:,} needed")
+
+
 def synthesize(script: dict, out_path: Path) -> float:
-    """Render the script to out_path. Returns duration in seconds."""
+    """Render the script to out_path. Returns duration in seconds.
+
+    Each chunk's audio is cached under a folder keyed by the script's hash, so a failed run can be retried
+    without paying again for chunks that already succeeded.
+    """
     from elevenlabs.client import ElevenLabs
 
     client = ElevenLabs(api_key=config.elevenlabs_api_key(), timeout=300)
     chunks = chunk_turns(script["turns"], config.DIALOGUE_CHUNK_CHARS)
-    total_chars = sum(len(t["text"]) for t in script["turns"])
-    print(f"[tts] {len(script['turns'])} turns, {total_chars} chars, {len(chunks)} request(s) with {config.TTS_MODEL}")
-
-    work = out_path.parent / f"{out_path.stem}_parts"
+    digest = hashlib.sha256(json.dumps([script["turns"], config.VOICE_A_ID, config.VOICE_B_ID, config.TTS_MODEL]).encode()).hexdigest()[:12]
+    work = out_path.parent / f"{out_path.stem}_parts_{digest}"
     work.mkdir(parents=True, exist_ok=True)
-    part_files: list[Path] = []
-    for i, chunk in enumerate(chunks):
+
+    todo = [i for i in range(len(chunks)) if not list(work.glob(f"{i:03d}_*.mp3"))]
+    needed = sum(len(t["text"]) for i in todo for t in chunks[i])
+    print(f"[tts] {len(script['turns'])} turns in {len(chunks)} chunk(s); {len(chunks) - len(todo)} cached, {len(todo)} to generate")
+    if todo:
+        check_quota(client, needed)
+
+    for i in todo:
+        chunk = chunks[i]
         try:
             blobs = [_dialogue_chunk(client, chunk)]
         except Exception as exc:  # noqa: BLE001 — model/API hiccups fall back to per-turn TTS
@@ -124,9 +147,8 @@ def synthesize(script: dict, out_path: Path) -> float:
             print(f"[tts] chunk {i} dialogue failed (HTTP {status}: {body}); falling back to {config.TTS_FALLBACK_MODEL}")
             blobs = _per_turn_chunk(client, chunk)
         for j, blob in enumerate(blobs):
-            f = work / f"{i:03d}_{j:03d}.mp3"
-            f.write_bytes(blob)
-            part_files.append(f)
+            (work / f"{i:03d}_{j:03d}.mp3").write_bytes(blob)
+        print(f"[tts] chunk {i + 1}/{len(chunks)} done")
 
-    master(part_files, out_path)
+    master(sorted(work.glob("*.mp3")), out_path)
     return ffprobe_duration(out_path)

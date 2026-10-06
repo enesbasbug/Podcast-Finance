@@ -90,7 +90,13 @@ def main(argv: list[str] | None = None) -> int:
 
     config.BUILD_DIR.mkdir(exist_ok=True)
     mp3 = config.BUILD_DIR / f"weekly-market-brief-{ep_id}.mp3"
-    duration = synthesize(script, mp3)
+    if mp3.exists() and not args.fresh:
+        from .tts import ffprobe_duration
+
+        print(f"[tts] reusing {mp3.relative_to(config.ROOT)}")
+        duration = ffprobe_duration(mp3)
+    else:
+        duration = synthesize(script, mp3)
     print(f"[tts] wrote {mp3.relative_to(config.ROOT)} ({duration / 60:.1f} min, {mp3.stat().st_size / 1e6:.1f} MB)")
 
     if args.no_publish:
