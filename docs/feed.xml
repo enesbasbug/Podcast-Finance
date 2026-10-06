@@ -15,6 +15,7 @@
     <itunes:author>Enes Basbug</itunes:author>
     <itunes:owner>
       <itunes:name>Enes Basbug</itunes:name>
+      <itunes:email>enesbasbugai@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:image href="https://enesbasbug.github.io/Podcast-Finance/cover.jpg"/>
     <image><url>https://enesbasbug.github.io/Podcast-Finance/cover.jpg</url><title>The Weekly Market Brief</title><link>https://enesbasbug.github.io/Podcast-Finance/</link></image>
@@ -22,7 +23,7 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
     <podcast:locked>no</podcast:locked>
-    <lastBuildDate>Tue, 06 Oct 2026 15:56:04 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 19:38:10 +0100</lastBuildDate>
     <generator>podcast_agent</generator>
 
   </channel>
