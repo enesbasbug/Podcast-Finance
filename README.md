@@ -53,10 +53,10 @@ Results for the current ISO week are cached, so re-runs reuse `briefing.md` and 
 ## Tuning
 
 - **Voices:** pick any two voice IDs from your ElevenLabs Voice Library and set `VOICE_A_ID` and `VOICE_B_ID`. The defaults are the premade British voices George and Alice.
-- **Length:** set `TARGET_WORDS_MIN` and `TARGET_WORDS_MAX`. The defaults of 850–1300 words give about 5–10 minutes.
+- **Length:** set `TARGET_WORDS_MIN` and `TARGET_WORDS_MAX`. The defaults of 550–750 words give about 5 minutes (the voices speak at about 120 words a minute).
 - **Tone and structure:** edit `podcast_agent/prompts/script.md`.
 
 ## Costs (rough)
 
 - **OpenAI:** about $0.30–$1 per episode (research with web search plus scripting).
-- **ElevenLabs:** about 6–9k characters per episode, or 25–40k a month. A public podcast needs a paid plan with a commercial licence. The Starter plan is tight on characters, so Creator is safer.
+- **ElevenLabs:** about 4–5k characters per episode, or 16–22k a month. A public podcast needs a paid plan with a commercial licence; Starter (30k a month) is enough.

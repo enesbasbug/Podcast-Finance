@@ -52,10 +52,28 @@ def write_script(briefing_md: str, date_window: str) -> dict:
         text={"format": {"type": "json_schema", "name": "podcast_script", "strict": True, "schema": SCHEMA}},
     )
     script = json.loads(response.output_text)
-
-    words = word_count(script)
-    if words < min_w * 0.6 or words > max_w * 1.5:
-        print(f"[script] warning: {words} words, outside target {min_w}-{max_w}")
     if not script["turns"]:
         raise RuntimeError("Script writer returned no dialogue turns")
+
+    # Models overshoot word targets and are poor at counting; ask for a concrete % cut, up to 3 passes.
+    target = (min_w + max_w) // 2
+    for _ in range(3):
+        words = word_count(script)
+        if words <= max_w:
+            break
+        cut = round(100 * (1 - target / words))
+        print(f"[script] {words} words is too long; asking for a {cut}% cut")
+        response = client.responses.create(
+            model=config.SCRIPT_MODEL,
+            instructions=instructions,
+            input=(
+                f"{user_input}\n\nHere is a draft script. It is {words} words; it must be about {target}. "
+                f"Cut roughly {cut}% of the words — delete whole stories, earnings items and side remarks rather "
+                "than squeezing every line. Keep the cold open, welcome, both disclaimers, the biggest stories and "
+                f"the week ahead, and keep the natural back-and-forth.\n\n{json.dumps(script, ensure_ascii=False)}"
+            ),
+            text={"format": {"type": "json_schema", "name": "podcast_script", "strict": True, "schema": SCHEMA}},
+        )
+        script = json.loads(response.output_text)
+    print(f"[script] final length {word_count(script)} words")
     return script

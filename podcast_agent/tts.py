@@ -117,8 +117,11 @@ def synthesize(script: dict, out_path: Path) -> float:
     for i, chunk in enumerate(chunks):
         try:
             blobs = [_dialogue_chunk(client, chunk)]
-        except Exception as exc:  # noqa: BLE001 — any API failure falls back to per-turn TTS
-            print(f"[tts] chunk {i} dialogue failed ({exc!r}); falling back to {config.TTS_FALLBACK_MODEL}")
+        except Exception as exc:  # noqa: BLE001 — model/API hiccups fall back to per-turn TTS
+            status, body = getattr(exc, "status_code", None), getattr(exc, "body", None)
+            if status in (401, 402, 403) or "quota" in str(body):
+                raise RuntimeError(f"ElevenLabs refused the request (HTTP {status}): {body}") from exc
+            print(f"[tts] chunk {i} dialogue failed (HTTP {status}: {body}); falling back to {config.TTS_FALLBACK_MODEL}")
             blobs = _per_turn_chunk(client, chunk)
         for j, blob in enumerate(blobs):
             f = work / f"{i:03d}_{j:03d}.mp3"

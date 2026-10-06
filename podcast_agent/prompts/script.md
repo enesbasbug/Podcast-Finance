@@ -6,14 +6,15 @@ Presenters
 They are colleagues who like each other. They react to each other ("Right—", "Hang on, that's interesting…", "Yeah, and the thing people miss is…"), sometimes finish a thought the other started, and ask each other genuine questions. No one monologues for more than ~90 words.
 
 Length and structure
-- Total spoken words: {min_words}–{max_words} (≈5–10 minutes). Prioritise ruthlessly; skip minor items.
-- Cold open (one or two lines hooking the biggest story) → short welcome naming the show and the date window → top stories → earnings worth knowing → "worth a closer look" companies (only if the briefing has any; it is fine to have none) → the week ahead with UK times → quick sign-off.
+- HARD LIMIT: total spoken words {min_words}–{max_words} (≈5 minutes) — roughly 25–35 short turns. Count as you go. This is a quick headline show: cover the 3 biggest stories, the 2 most important earnings, at most one "worth a closer look" company, and the 3–4 key events next week. Drop everything else — the full written briefing is linked in the show notes.
+- Cold open (one line hooking the biggest story) → short welcome naming the show and the date window → top stories → earnings worth knowing → "worth a closer look" companies (only if the briefing has any; it is fine to have none) → the week ahead with UK times → quick sign-off.
 - Early in the episode and again at the sign-off, include a brief, natural disclaimer: this is general information, not personal financial advice; do your own research.
 
 Accuracy rules (critical)
 - Use ONLY facts in the briefing. Never add numbers, prices, quotes or explanations that are not there. Keep labels like "adjusted", "unverified", "according to management".
 - If the briefing flags uncertainty or a correction to last week, say so plainly on air.
 - Never present a company as a buy. Use framing like "one to research further" and always mention the key risk.
+- Never tell listeners what to do with their money (no "I'd avoid…", "I'd be careful with X funds", "time to buy"). Describe implications and risks for different kinds of assets instead ("that's a headwind for long-dated bond funds").
 
 Writing for the ear
 - Never read URLs, citations or markdown aloud. You may say "links are in the show notes".

@@ -8,6 +8,11 @@ from openai import OpenAI
 from . import config
 
 
+def strip_tracking(text: str) -> str:
+    """Remove the utm_source=openai parameter OpenAI's web search appends to every cited URL."""
+    return text.replace("?utm_source=openai&", "?").replace("&utm_source=openai", "").replace("?utm_source=openai", "")
+
+
 @dataclass
 class Research:
     markdown: str
@@ -22,7 +27,8 @@ def _collect_sources(response) -> list[dict]:
         for part in getattr(item, "content", None) or []:
             for ann in getattr(part, "annotations", None) or []:
                 if getattr(ann, "type", None) == "url_citation" and ann.url not in seen:
-                    seen[ann.url] = {"title": getattr(ann, "title", None) or ann.url, "url": ann.url}
+                    url = strip_tracking(ann.url)
+                    seen[ann.url] = {"title": getattr(ann, "title", None) or url, "url": url}
     return list(seen.values())
 
 
@@ -55,7 +61,7 @@ def run_research(now: datetime, since: datetime, week_label: str, previous_brief
         reasoning={"effort": config.RESEARCH_REASONING},
     )
 
-    markdown = (response.output_text or "").strip()
+    markdown = strip_tracking(response.output_text or "").strip()
     if len(markdown) < 500:
         raise RuntimeError(f"Research output suspiciously short ({len(markdown)} chars):\n{markdown}")
     return Research(markdown=markdown, sources=_collect_sources(response))

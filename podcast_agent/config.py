@@ -67,4 +67,5 @@ SHOW_DESCRIPTION = os.environ.get("SHOW_DESCRIPTION") or (
 )
 SHOW_CATEGORY = ("Business", "Investing")
 
-TARGET_WORDS = (int(os.environ.get("TARGET_WORDS_MIN") or 850), int(os.environ.get("TARGET_WORDS_MAX") or 1300))
+# ElevenLabs v3 dialogue runs at ~120 spoken words/minute, so 550–750 words ≈ 5–6 minutes.
+TARGET_WORDS = (int(os.environ.get("TARGET_WORDS_MIN") or 550), int(os.environ.get("TARGET_WORDS_MAX") or 750))
