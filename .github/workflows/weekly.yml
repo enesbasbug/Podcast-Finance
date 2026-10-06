@@ -1,0 +1,106 @@
+name: Weekly episode
+
+on:
+  schedule:
+    # GitHub cron is UTC. Two triggers + the guard below give 10:00 Europe/London all year:
+    #   09:00 UTC = 10:00 BST (summer), 10:00 UTC = 10:00 GMT (winter).
+    - cron: "0 9 * * 1"
+    - cron: "0 10 * * 1"
+  workflow_dispatch:
+    inputs:
+      args:
+        description: "Extra args, e.g. --force or --fresh"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: weekly-episode
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    outputs:
+      run: ${{ steps.guard.outputs.run }}
+    steps:
+      - name: Only run the cron that matches 10:00 London time
+        id: guard
+        env:
+          EVENT: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          offset=$(TZ=Europe/London date +%z)
+          run=true
+          if [ "$EVENT" = "schedule" ]; then
+            if [ "$offset" = "+0100" ] && [ "$SCHEDULE" != "0 9 * * 1" ]; then run=false; fi
+            if [ "$offset" = "+0000" ] && [ "$SCHEDULE" != "0 10 * * 1" ]; then run=false; fi
+          fi
+          echo "London offset $offset, schedule '$SCHEDULE' -> run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@v4
+        if: steps.guard.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.guard.outputs.run == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -r requirements.txt
+
+      - name: Generate and publish episode
+        if: steps.guard.outputs.run == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          GH_TOKEN: ${{ github.token }}
+          SHOW_OWNER_EMAIL: ${{ vars.SHOW_OWNER_EMAIL }}
+          SHOW_TITLE: ${{ vars.SHOW_TITLE }}
+          SHOW_AUTHOR: ${{ vars.SHOW_AUTHOR }}
+          RESEARCH_MODEL: ${{ vars.RESEARCH_MODEL }}
+          SCRIPT_MODEL: ${{ vars.SCRIPT_MODEL }}
+          VOICE_A_ID: ${{ vars.VOICE_A_ID }}
+          VOICE_B_ID: ${{ vars.VOICE_B_ID }}
+          HOST_A_NAME: ${{ vars.HOST_A_NAME }}
+          HOST_B_NAME: ${{ vars.HOST_B_NAME }}
+        run: python -m podcast_agent ${{ github.event.inputs.args }}
+
+      # Commit even on failure so a retry reuses the (paid-for) briefing/script instead of regenerating them.
+      - name: Commit episode files and feed
+        if: always() && steps.guard.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add episodes docs
+          git diff --cached --quiet && exit 0
+          git commit -m "Episode $(TZ=Europe/London date +%G-W%V)"
+          git push
+
+  deploy-pages:
+    needs: generate
+    if: needs.generate.outputs.run == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4

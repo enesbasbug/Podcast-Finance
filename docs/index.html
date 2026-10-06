@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Weekly Market Brief</title>
+<link rel="alternate" type="application/rss+xml" title="The Weekly Market Brief" href="feed.xml">
+<style>
+  :root { --bg:#f7f8fa; --fg:#0b1730; --muted:#5b667a; --accent:#0d8a6a; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0b1220; --fg:#e8edf5; --muted:#9aa6ba; --accent:#5af2b3; --card:#121b2e; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 system-ui, -apple-system, sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:32px 16px; }
+  img { width:180px; height:180px; border-radius:16px; }
+  h1 { margin:16px 0 4px; } p { color:var(--muted); }
+  a.btn { display:inline-block; margin:6px 8px 6px 0; padding:10px 14px; border-radius:10px; background:var(--card); color:var(--accent); text-decoration:none; font-weight:600; }
+  code { word-break:break-all; }
+</style>
+</head>
+<body>
+<main>
+  <img src="cover.jpg" alt="The Weekly Market Brief cover art">
+  <h1>The Weekly Market Brief</h1>
+  <p>A source-checked weekly briefing on markets, the economy and earnings for UK retail investors. New episodes every Monday at 10:00 UK time.</p>
+  <p><a class="btn" href="feed.xml">RSS feed</a></p>
+  <p>To listen in any podcast app, add this URL: <code id="feed"></code></p>
+  <p><small>General information only, not personal financial advice. Researched with AI web search and voiced with AI voices.</small></p>
+</main>
+<script>document.getElementById('feed').textContent = new URL('feed.xml', location.href).href;</script>
+</body>
+</html>

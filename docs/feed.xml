@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel>
+    <title>The Weekly Market Brief</title>
+    <link>https://enesbasbug.github.io/Podcast-Finance/</link>
+    <atom:link href="https://enesbasbug.github.io/Podcast-Finance/feed.xml" rel="self" type="application/rss+xml"/>
+    <language>en-gb</language>
+    <copyright>© 2026 Enes Basbug</copyright>
+    <description>A weekly, source-checked briefing on markets, the economy and company earnings for UK retail investors, released every Monday morning. General information only, not personal financial advice. Researched and voiced with AI.</description>
+    <itunes:summary>A weekly, source-checked briefing on markets, the economy and company earnings for UK retail investors, released every Monday morning. General information only, not personal financial advice. Researched and voiced with AI.</itunes:summary>
+    <itunes:author>Enes Basbug</itunes:author>
+    <itunes:owner>
+      <itunes:name>Enes Basbug</itunes:name>
+    </itunes:owner>
+    <itunes:image href="https://enesbasbug.github.io/Podcast-Finance/cover.jpg"/>
+    <image><url>https://enesbasbug.github.io/Podcast-Finance/cover.jpg</url><title>The Weekly Market Brief</title><link>https://enesbasbug.github.io/Podcast-Finance/</link></image>
+    <itunes:category text="Business"><itunes:category text="Investing"/></itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+    <podcast:locked>no</podcast:locked>
+    <lastBuildDate>Tue, 06 Oct 2026 15:56:04 +0100</lastBuildDate>
+    <generator>podcast_agent</generator>
+
+  </channel>
+</rss>
