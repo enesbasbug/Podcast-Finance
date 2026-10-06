@@ -19,6 +19,10 @@ def upload_release(tag: str, title: str, notes: str, mp3: Path) -> str:
         subprocess.run(
             ["gh", "release", "upload", tag, str(mp3), "--clobber", "--repo", config.GITHUB_REPOSITORY], check=True
         )
+        subprocess.run(
+            ["gh", "release", "edit", tag, "--title", title, "--notes", notes, "--repo", config.GITHUB_REPOSITORY],
+            check=True,
+        )
     else:
         subprocess.run(
             [

@@ -1,134 +1,122 @@
 {
   "title": "Yields Ease, Jobs Cool, Micron Surges",
-  "summary": "US equities reached fresh highs as yields and oil eased, but bond-market risks remain central for UK investors. This week also covers softer US payrolls, revised UK growth, Micron’s exceptional AI-memory results, Nike’s early-stage turnaround, and the key events ahead.",
+  "summary": "This week’s quick briefing covers record US equity highs, easing bond yields, softer US jobs data and lower oil prices. We also unpack Micron’s extraordinary AI-memory results, Nike’s early-stage turnaround, and the key UK-time events to watch next week.",
   "turns": [
     {
       "speaker": "A",
-      "text": "US markets hit fresh highs as yields and oil eased — but the bond-market warning light is not off."
+      "text": "US shares hit fresh highs, but the bigger story is the tug-of-war between falling yields, weaker jobs, cheaper oil and very expensive AI optimism."
     },
     {
       "speaker": "A",
-      "text": "Welcome to The Weekly Market Brief, covering Tuesday the twenty-ninth of September to Tuesday the sixth of October. As ever, this is general information, not personal financial advice. Do your own research."
+      "text": "Welcome to The Weekly Market Brief, covering Tuesday the twenty-ninth of September to Tuesday the sixth of October twenty twenty-six. As ever, this is general information, not personal financial advice, so please do your own research."
+    },
+    {
+      "speaker": "A",
+      "text": "First story: bond yields — basically the interest rate governments pay to borrow — eased late in the week, and that helped the S&P 500 and Nasdaq reach records on Tuesday."
     },
     {
       "speaker": "B",
-      "text": "And maybe keep one hand on the desk. The tape looked calmer by Tuesday, but underneath it was still twitchy."
+      "text": "Right, but the warning light hasn’t gone out. Earlier in the week, global government bond yields were reported near multi-decade highs, and the Bank of England flagged elevated risk in gilt markets."
     },
     {
       "speaker": "A",
-      "text": "Top story first: US equities rebounded, with the S&P 500 and Nasdaq at records, helped by lower Treasury yields, lower oil, and continuing AI optimism."
+      "text": "And gilts are UK government bonds, for anyone not living inside a rates terminal."
     },
     {
       "speaker": "B",
-      "text": "Yes, but earlier in the week, global bond selling had pushed US Treasury yields to multi-decade highs before they reversed intraday. That matters for UK investors as well."
+      "text": "Exactly. The Bank said adjustments had mostly been gradual so far, but hedge-fund borrowing in the gilt market remained elevated. Dry phrase, real risk."
     },
     {
       "speaker": "A",
-      "text": "Because long yields touch almost everything: equity valuations, bond funds, mortgages, and property-sensitive sectors."
+      "text": "So what does this mean for a normal investor?"
     },
     {
       "speaker": "B",
-      "text": "Exactly. Lower yields can support growth and technology shares. But if long yields move higher again, that’s a headwind for equity multiples and duration-heavy bond funds."
+      "text": "Lower yields can help growth shares and technology valuations. But if long-term yields jump again, that’s a headwind for bond funds, expensive equities, and mortgage-sensitive parts of the market."
     },
     {
       "speaker": "A",
-      "text": "And the Bank of England added a UK-specific warning."
+      "text": "Second story: the US labour market cooled sharply. September payrolls rose by just twenty-nine thousand, and unemployment was four point two percent."
     },
     {
       "speaker": "B",
-      "text": "Its Financial Policy Committee said gilt and US Treasury yields had reached levels not seen since 2008. Adjustments had mostly been gradual, but hedge-fund leverage in gilts remained elevated."
+      "text": "That supports the idea that the US central bank may not need to raise rates in October. But the obvious question is: good news, or bad news?"
     },
     {
       "speaker": "A",
-      "text": "So even with indices rising, there’s still a financial-stability undertone."
+      "text": "Because weaker jobs can mean lower rate pressure, but also weaker demand."
     },
     {
       "speaker": "B",
-      "text": "That’s the bit people miss. A rising index doesn’t mean the plumbing is boring. [chuckles]"
+      "text": "Exactly. It helps rate-sensitive shares only if it doesn’t turn into an earnings problem. So this is not simply “bad jobs equals good markets”."
     },
     {
       "speaker": "A",
-      "text": "Second story: US labour cooled sharply. September nonfarm payrolls rose just twenty-nine thousand, and unemployment was four point two percent."
+      "text": "Third story: oil. OPEC said seven countries would keep November production at September-required levels, while reports of higher Middle East exports and planned G7 stock releases pushed oil lower."
     },
     {
       "speaker": "B",
-      "text": "And July and August payrolls were revised down by sixty thousand combined. Average hourly earnings rose zero point one percent month on month, and three percent year on year."
+      "text": "That matters because cheaper oil can help airlines, logistics companies, households and inflation expectations. But conflict risk hasn’t disappeared, so energy prices remain a live risk."
     },
     {
       "speaker": "A",
-      "text": "That helps explain why markets became more comfortable with no Fed hike in October."
+      "text": "Now, earnings worth knowing. First, Micron. This was the stand-out AI-related result of the week."
     },
     {
       "speaker": "B",
-      "text": "Yes, but it’s two-sided. Softer jobs data helps rate-sensitive assets only if it doesn’t become an earnings recession. Banks, staffing, discretionary retail, travel and semiconductors are the areas to watch."
+      "text": "Stand-out is doing some work there. Micron reported about fifty-four billion dollars of revenue for its fiscal fourth quarter, up from about eleven billion a year earlier. Official net income was about thirty-eight billion dollars."
     },
     {
       "speaker": "A",
-      "text": "Third: the UK data looked a little better, though not enough to remove the bigger concerns."
+      "text": "And management guided the next quarter’s revenue to around sixty-two billion dollars, give or take."
     },
     {
       "speaker": "B",
-      "text": "ONS revised Q2 real GDP growth to zero point five percent, after zero point six percent in Q1. Real household disposable income per head rose one percent."
+      "text": "Which says AI infrastructure demand is feeding through to memory pricing and margins. But memory chips are historically cyclical. Exceptional margins can reverse quickly if supply catches up or customers slow spending."
     },
     {
       "speaker": "A",
-      "text": "And the underlying current-account deficit, excluding precious metals, narrowed to eleven point three billion pounds, or one point four percent of GDP."
+      "text": "Second earnings story: Nike. Revenue was eleven point two billion dollars, down four percent, but gross margin improved by about half a percentage point."
     },
     {
       "speaker": "B",
-      "text": "Helpful for sterling-risk perceptions, yes. But not enough, on its own, to make fiscal and gilt-market worries vanish."
+      "text": "That’s the turnaround tension in one sentence. Costs and margins are improving, but revenue is still falling, and the company expects fiscal-year revenue to decline by high single digits."
     },
     {
       "speaker": "A",
-      "text": "Earnings. The standout was Micron."
+      "text": "So this isn’t yet a clean growth story."
     },
     {
       "speaker": "B",
-      "text": "Standout is doing some work there. Fiscal Q4 revenue was fifty-four point two three billion dollars, up from forty-one point four six billion in fiscal Q3 and eleven point three two billion a year earlier."
+      "text": "No. It’s a restructuring story trying to become a product momentum story. The risk is that savings get the attention, while China, digital sales and brand heat still need to stabilise."
     },
     {
       "speaker": "A",
-      "text": "GAAP net income was thirty-seven point seven billion dollars, and GAAP gross margin was eighty-six point eight percent."
+      "text": "Quick week ahead. Wednesday at seven p.m. UK time, the Fed minutes land, from the September meeting."
     },
     {
       "speaker": "B",
-      "text": "Management guided fiscal Q1 2027 revenue to sixty-one point five billion dollars, plus or minus one point five billion. That’s powerful evidence that AI demand is feeding into memory pricing."
+      "text": "Markets will look for how seriously policymakers discussed inflation and oil risks versus softer jobs data. That mix matters for bonds, currencies and growth shares."
     },
     {
       "speaker": "A",
-      "text": "So Micron is one to research further, not a recommendation — and the obvious risk is cyclicality."
+      "text": "Thursday brings PepsiCo: release at eleven a.m., analyst questions at one fifteen p.m. UK time. Tesco also reports interims, with UK grocery volumes and price investment in focus."
     },
     {
       "speaker": "B",
-      "text": "Very. What would change my mind? Evidence of HBM or DRAM oversupply, hyperscaler capex discipline, customer concentration problems, or margins normalising faster than expected."
+      "text": "Then Friday at three p.m., Delta Air Lines has its September-quarter webcast, with read-throughs for oil, premium travel and corporate demand."
     },
     {
       "speaker": "A",
-      "text": "The other big earnings story is Nike, where the turnaround still looks early and messy. Fiscal Q1 revenue was eleven point two billion dollars, down four percent reported."
+      "text": "Quick recap: yields eased but bond-market risk remains; softer US jobs lower rate pressure but raise growth questions; and oil relief helps, but isn’t guaranteed."
     },
     {
       "speaker": "B",
-      "text": "Gross margin improved sixty basis points to forty-two point eight percent, but net income fell two percent. That’s not a clean growth story."
+      "text": "And on earnings, Micron’s numbers were extraordinary, with cyclical risks attached, while Nike’s turnaround is still early and messy."
     },
     {
       "speaker": "A",
-      "text": "And for fiscal 2027, Nike expects revenue to decline high single digits, with adjusted diluted EPS of one dollar fifteen to one dollar thirty-five."
-    },
-    {
-      "speaker": "B",
-      "text": "The risk is that investors focus on savings. The case needs product momentum, healthier channels and China stabilisation — not just a tidier cost base."
-    },
-    {
-      "speaker": "A",
-      "text": "Week ahead. Wednesday at seven p.m. UK time, Fed minutes. Thursday, PepsiCo releases Q3 materials at eleven a.m., with Q&A at one fifteen. Also Thursday, Tesco reports interims."
-    },
-    {
-      "speaker": "B",
-      "text": "And Friday at three p.m., Delta Air Lines’ September-quarter webcast gives read-throughs on oil, premium travel, corporate demand and free cash flow."
-    },
-    {
-      "speaker": "A",
-      "text": "That’s it for this week. Links and the full written briefing are in the show notes. Reminder: this has been general market information, not personal financial advice. Do your own research, and we’ll be back next week."
+      "text": "That’s The Weekly Market Brief. Links are in the show notes. Final reminder: this is general information, not personal financial advice. Do your own research, and we’ll be back next week."
     }
   ]
 }

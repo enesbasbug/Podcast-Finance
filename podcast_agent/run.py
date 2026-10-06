@@ -116,7 +116,7 @@ def main(argv: list[str] | None = None) -> int:
     index.append(
         {
             "id": ep_id,
-            "guid": f"{config.GITHUB_REPOSITORY}:{tag}",
+            "guid": f"{config.GITHUB_REPOSITORY}:{tag}:{now:%Y%m%dT%H%M}",
             "title": title,
             "summary": script["summary"],
             "pub_date_iso": now.isoformat(),
