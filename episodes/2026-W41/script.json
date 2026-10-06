@@ -1,142 +1,134 @@
 {
-  "title": "Bond Relief, Soft Jobs and AI Memory",
-  "summary": "George and Alice cover the week to 6 October 2026: record US equity highs, lingering gilt and Treasury risks, softer US payrolls and a modestly better UK growth picture. They also discuss Micron’s exceptional AI-memory results, Nike’s still-messy turnaround, and the key market events coming next.",
+  "title": "Yields Ease, Jobs Cool, Micron Surges",
+  "summary": "US equities reached fresh highs as yields and oil eased, but bond-market risks remain central for UK investors. This week also covers softer US payrolls, revised UK growth, Micron’s exceptional AI-memory results, Nike’s early-stage turnaround, and the key events ahead.",
   "turns": [
     {
       "speaker": "A",
-      "text": "US stocks hit fresh highs, but the bond market is still breathing down everyone’s neck."
+      "text": "US markets hit fresh highs as yields and oil eased — but the bond-market warning light is not off."
     },
     {
       "speaker": "A",
-      "text": "Hello and welcome to The Weekly Market Brief, covering Tuesday the twenty ninth of September to Tuesday the sixth of October, just after seven p.m. UK time. I’m George."
+      "text": "Welcome to The Weekly Market Brief, covering Tuesday the twenty-ninth of September to Tuesday the sixth of October. As ever, this is general information, not personal financial advice. Do your own research."
     },
     {
       "speaker": "B",
-      "text": "And I’m Alice. Quick reminder: this is general market information, not personal financial advice. Do your own research, because we don’t know your ISA, your mortgage, or your tolerance for chaos."
+      "text": "And maybe keep one hand on the desk. The tape looked calmer by Tuesday, but underneath it was still twitchy."
     },
     {
       "speaker": "A",
-      "text": "Right. Story one: yields, oil and AI. On the sixth of October, US equities rebounded, with the S&P 500 and Nasdaq reaching records, helped by lower Treasury yields, lower oil, and continuing AI optimism."
+      "text": "Top story first: US equities rebounded, with the S&P 500 and Nasdaq at records, helped by lower Treasury yields, lower oil, and continuing AI optimism."
     },
     {
       "speaker": "B",
-      "text": "Yes, but earlier in the week, sovereign yields were under pressure. The Bank of England’s Financial Policy Committee said gilt and US Treasury yields had reached levels not seen since 2008, and hedge-fund leverage in gilts remained elevated."
+      "text": "Yes, but earlier in the week, global bond selling had pushed US Treasury yields to multi-decade highs before they reversed intraday. That matters for UK investors as well."
     },
     {
       "speaker": "A",
-      "text": "So lower yields help growth shares, but the warning hasn’t gone away."
+      "text": "Because long yields touch almost everything: equity valuations, bond funds, mortgages, and property-sensitive sectors."
     },
     {
       "speaker": "B",
-      "text": "Exactly. A renewed rise in long yields would be a headwind for equity valuations, duration-heavy bond funds and mortgage-sensitive sectors. Relief rally, not clean bill of health."
+      "text": "Exactly. Lower yields can support growth and technology shares. But if long yields move higher again, that’s a headwind for equity multiples and duration-heavy bond funds."
     },
     {
       "speaker": "A",
-      "text": "Oil helped too. OPEC said seven countries, including Saudi Arabia and Russia, would keep November production at September-required levels."
+      "text": "And the Bank of England added a UK-specific warning."
     },
     {
       "speaker": "B",
-      "text": "And Reuters reported prices slipped as Middle East crude exports increased and the G7 pledged additional supply releases. Helpful for airlines, logistics and inflation expectations. But conflict-linked disruption risk is still live."
+      "text": "Its Financial Policy Committee said gilt and US Treasury yields had reached levels not seen since 2008. Adjustments had mostly been gradual, but hedge-fund leverage in gilts remained elevated."
     },
     {
       "speaker": "A",
-      "text": "Second big story: US labour cooled sharply."
+      "text": "So even with indices rising, there’s still a financial-stability undertone."
     },
     {
       "speaker": "B",
-      "text": "Very sharply. September nonfarm payrolls rose by twenty nine thousand. Unemployment was four point two percent, average hourly earnings rose zero point one percent month on month, and July and August payrolls were revised down by sixty thousand combined."
+      "text": "That’s the bit people miss. A rising index doesn’t mean the plumbing is boring. [chuckles]"
     },
     {
       "speaker": "A",
-      "text": "Markets hear that and think: less pressure for a Fed hike in October."
+      "text": "Second story: US labour cooled sharply. September nonfarm payrolls rose just twenty-nine thousand, and unemployment was four point two percent."
     },
     {
       "speaker": "B",
-      "text": "They do. But softer jobs only help rate-sensitive assets if they don’t become an earnings problem. Banks, staffing, discretionary retail, travel and semiconductors are the areas to watch."
+      "text": "And July and August payrolls were revised down by sixty thousand combined. Average hourly earnings rose zero point one percent month on month, and three percent year on year."
     },
     {
       "speaker": "A",
-      "text": "Third story: the UK looked a bit better. The ONS revised Q2 real GDP growth up to zero point five percent, after zero point six percent in Q1."
+      "text": "That helps explain why markets became more comfortable with no Fed hike in October."
     },
     {
       "speaker": "B",
-      "text": "And real household disposable income per head rose one percent in Q2, after falling zero point eight percent in Q1. Helpful, but not a magic wand."
+      "text": "Yes, but it’s two-sided. Softer jobs data helps rate-sensitive assets only if it doesn’t become an earnings recession. Banks, staffing, discretionary retail, travel and semiconductors are the areas to watch."
     },
     {
       "speaker": "A",
-      "text": "Because the fiscal and gilt concerns are still there."
+      "text": "Third: the UK data looked a little better, though not enough to remove the bigger concerns."
     },
     {
       "speaker": "B",
-      "text": "Exactly. Better household income helps the domestic backdrop, but it doesn’t remove the bond-market risks we started with."
+      "text": "ONS revised Q2 real GDP growth to zero point five percent, after zero point six percent in Q1. Real household disposable income per head rose one percent."
     },
     {
       "speaker": "A",
-      "text": "Let’s move to earnings. The standout was Micron."
+      "text": "And the underlying current-account deficit, excluding precious metals, narrowed to eleven point three billion pounds, or one point four percent of GDP."
     },
     {
       "speaker": "B",
-      "text": "Honestly, extraordinary numbers. Fiscal Q4 revenue was fifty four point two three billion dollars, up from eleven point three two billion a year earlier. GAAP net income was thirty seven point seven billion dollars, and GAAP gross margin was eighty six point eight percent."
+      "text": "Helpful for sterling-risk perceptions, yes. But not enough, on its own, to make fiscal and gilt-market worries vanish."
     },
     {
       "speaker": "A",
-      "text": "That is not your normal memory-cycle print."
+      "text": "Earnings. The standout was Micron."
     },
     {
       "speaker": "B",
-      "text": "No. Management guided fiscal Q1 2027 revenue to sixty one point five billion dollars, plus or minus one point five billion, with non-GAAP gross margin around eighty six point two five percent."
+      "text": "Standout is doing some work there. Fiscal Q4 revenue was fifty-four point two three billion dollars, up from forty-one point four six billion in fiscal Q3 and eleven point three two billion a year earlier."
     },
     {
       "speaker": "A",
-      "text": "And the implication?"
+      "text": "GAAP net income was thirty-seven point seven billion dollars, and GAAP gross margin was eighty-six point eight percent."
     },
     {
       "speaker": "B",
-      "text": "It’s the clearest earnings evidence this week that AI infrastructure demand is feeding into memory pricing and margins. But memory is historically cyclical. HBM or DRAM oversupply, hyperscaler capex discipline, or customer concentration would matter quickly."
+      "text": "Management guided fiscal Q1 2027 revenue to sixty-one point five billion dollars, plus or minus one point five billion. That’s powerful evidence that AI demand is feeding into memory pricing."
     },
     {
       "speaker": "A",
-      "text": "Second earnings name: Nike. Very different tone."
+      "text": "So Micron is one to research further, not a recommendation — and the obvious risk is cyclicality."
     },
     {
       "speaker": "B",
-      "text": "Very different. Fiscal Q1 revenue was eleven point two billion dollars, down four percent reported and five percent currency-neutral. Gross margin improved by sixty basis points to forty two point eight percent, and diluted EPS was forty eight cents."
+      "text": "Very. What would change my mind? Evidence of HBM or DRAM oversupply, hyperscaler capex discipline, customer concentration problems, or margins normalising faster than expected."
     },
     {
       "speaker": "A",
-      "text": "So cost control is improving, but the turnaround isn’t revenue-led yet."
+      "text": "The other big earnings story is Nike, where the turnaround still looks early and messy. Fiscal Q1 revenue was eleven point two billion dollars, down four percent reported."
     },
     {
       "speaker": "B",
-      "text": "That’s the issue. Fiscal 2027 revenue is still expected to decline high single digits. Adjusted diluted EPS guidance is one dollar fifteen to one dollar thirty five, excluding about fifteen cents of restructuring expense related to Pace."
+      "text": "Gross margin improved sixty basis points to forty-two point eight percent, but net income fell two percent. That’s not a clean growth story."
     },
     {
       "speaker": "A",
-      "text": "Worth a closer look this week: Micron, strictly as a research candidate, not a recommendation."
+      "text": "And for fiscal 2027, Nike expects revenue to decline high single digits, with adjusted diluted EPS of one dollar fifteen to one dollar thirty-five."
     },
     {
       "speaker": "B",
-      "text": "Yes. It’s a direct way to study the AI-memory cycle, but the key risk is that current profitability may be unusually high for a commodity-like semiconductor business. Falling HBM prices, inventory build, or capex outrunning free cash flow would weaken the thesis."
+      "text": "The risk is that investors focus on savings. The case needs product momentum, healthier channels and China stabilisation — not just a tidier cost base."
     },
     {
       "speaker": "A",
-      "text": "Week ahead. Wednesday at one p.m. UK time, Constellation Brands has its Q2 call; the release was scheduled after our cutoff, so it’s upcoming, not reviewed. Then at seven p.m., Fed minutes from September."
+      "text": "Week ahead. Wednesday at seven p.m. UK time, Fed minutes. Thursday, PepsiCo releases Q3 materials at eleven a.m., with Q&A at one fifteen. Also Thursday, Tesco reports interims."
     },
     {
       "speaker": "B",
-      "text": "Thursday, PepsiCo has Q3 materials at eleven a.m. and analyst Q&A at one fifteen p.m. UK time. Tesco also reports interim results, with UK grocery volumes and price investment in focus."
+      "text": "And Friday at three p.m., Delta Air Lines’ September-quarter webcast gives read-throughs on oil, premium travel, corporate demand and free cash flow."
     },
     {
       "speaker": "A",
-      "text": "And Friday at three p.m. UK time, Delta Air Lines’ September-quarter webcast. Useful for fuel, premium travel, corporate demand and free-cash-flow commentary."
-    },
-    {
-      "speaker": "B",
-      "text": "Links to the full written briefing and sources are in the show notes. Final reminder: this is general information, not personal financial advice. Do your own research and check suitability before acting."
-    },
-    {
-      "speaker": "A",
-      "text": "Thanks for listening to The Weekly Market Brief. We’ll be back next week."
+      "text": "That’s it for this week. Links and the full written briefing are in the show notes. Reminder: this has been general market information, not personal financial advice. Do your own research, and we’ll be back next week."
     }
   ]
 }

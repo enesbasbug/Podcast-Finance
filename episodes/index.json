@@ -1,1 +1,115 @@
-[]
+[
+  {
+    "id": "2026-W41",
+    "guid": "enesbasbug/Podcast-Finance:ep-2026-W41",
+    "title": "06 Oct 2026: Yields Ease, Jobs Cool, Micron Surges",
+    "summary": "US equities reached fresh highs as yields and oil eased, but bond-market risks remain central for UK investors. This week also covers softer US payrolls, revised UK growth, Micron’s exceptional AI-memory results, Nike’s early-stage turnaround, and the key events ahead.",
+    "pub_date_iso": "2026-10-06T19:44:27+01:00",
+    "audio_url": "https://github.com/enesbasbug/Podcast-Finance/releases/download/ep-2026-W41/weekly-market-brief-2026-W41.mp3",
+    "audio_bytes": 4819113,
+    "duration_seconds": 301.1,
+    "briefing_url": "https://github.com/enesbasbug/Podcast-Finance/blob/main/episodes/2026-W41/briefing.md",
+    "sources": [
+      {
+        "title": "S&P 500, Nasdaq hit record highs as Treasury yields stall, oil slips | MarketScreener UK",
+        "url": "https://uk.marketscreener.com/news/s-p-500-nasdaq-hit-record-highs-as-treasury-yields-stall-oil-slips-ce785dd9da8af226"
+      },
+      {
+        "title": "Employment Situation News Release - 2026 M09 Results",
+        "url": "https://www.bls.gov/news.release/archives/empsit_10022026.htm"
+      },
+      {
+        "title": "GDP quarterly national accounts, UK - Office for National Statistics",
+        "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/latest"
+      },
+      {
+        "title": "Organization of the Petroleum Exporting Countries",
+        "url": "https://www.opec.org/pr-detail/1891616-4-october-2026.html"
+      },
+      {
+        "title": "Micron Technology, Inc. - Micron Technology, Inc. Reports Record Fiscal Fourth-Quarter and Full-Year 2026 Results",
+        "url": "https://investors.micron.com/news/press-release/2026/Micron-Technology-Inc--Reports-Record-Fiscal-Fourth-Quarter-and-Full-Year-2026-Results/default.aspx"
+      },
+      {
+        "title": "Financial Policy Committee Record – September 2026 | Bank of England – the UK's central bank",
+        "url": "https://www.bankofengland.co.uk/financial-policy-committee-record/2026/september-2026"
+      },
+      {
+        "title": "September",
+        "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/pmi/september/"
+      },
+      {
+        "title": "Balance of payments, UK - Office for National Statistics",
+        "url": "https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/bulletins/balanceofpayments/apriltojune2026"
+      },
+      {
+        "title": "Oil steadies as Middle East crude exports rise and G7 to release stocks | Financial News",
+        "url": "https://www.lse.co.uk/news/oil-steadies-as-middle-east-crude-exports-rise-and-g7-to-release-stocks-b90hbkd68c76ery.html"
+      },
+      {
+        "title": "Tesla Third Quarter 2026 Production, Deliveries & Deployments | Tesla Investor Relations",
+        "url": "https://ir.tesla.com/press-release/tesla-third-quarter-2026-production-deliveries-and-deployments?trk=public_post_comment-text"
+      },
+      {
+        "title": "NIKE, Inc. - Investor Relations - NIKE, Inc. Reports Fiscal 2027 First Quarter Results",
+        "url": "https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2026/NIKE-Inc--Reports-Fiscal-2027-First-Quarter-Results/default.aspx"
+      },
+      {
+        "title": "Lamb Weston Announces First Quarter Fiscal 2027 Results Above Guidance | Tue, 10/06/2026 - 08:00",
+        "url": "https://investors.lambweston.com/news-releases/news-release-details/lamb-weston-announces-first-quarter-fiscal-2027-results-above"
+      },
+      {
+        "title": "Company News Release | RPM International Inc.",
+        "url": "https://cmsrpminc.com/news/news-release/?workflowid=ff49c8f1-dd83-4cda-8ea9-2887328d8535"
+      },
+      {
+        "title": "Constellation Brands to Report Second Quarter Fiscal 2027 Financial Results on October 6, 2026, After Market Close and Host Conference Call on October 7, 2026, at 8:00 AM ET :: Constellation Brands, Inc. (STZ)",
+        "url": "https://ir.cbrands.com/news-events/press-releases/detail/345/constellation-brands-to-report-second-quarter-fiscal-2027-financial-results-on-october-6-2026-after-market-close-and-host-conference-call-on-october-7-2026-at-8-00-am-et"
+      },
+      {
+        "title": "Investors – Carnival Corporation Ltd.",
+        "url": "https://www.carnivalcorp.com/investors"
+      },
+      {
+        "title": "PepsiCo Announces Timing and Availability of Third-Quarter 2026 Financial Results",
+        "url": "https://www.pepsico.com/en/newsroom/press-releases/2026/pepsico-announces-timing-and-availability-of-third-quarter-2026-financial-results"
+      },
+      {
+        "title": "Delta Air Lines, Inc. - Delta Air Lines Announces Webcast of September Quarter 2026 Financial Results",
+        "url": "https://ir.delta.com/news/news-details/2026/Delta-Air-Lines-Announces-Webcast-of-September-Quarter-2026-Financial-Results/default.aspx"
+      },
+      {
+        "title": "Micron Technology Share Price (NASDAQ:MU) | AJ Bell",
+        "url": "https://www.ajbell.co.uk/market-research/NASDAQ%3AMU"
+      },
+      {
+        "title": "Nike Share Price (NYSE:NKE) | AJ Bell",
+        "url": "https://www.ajbell.co.uk/market-research/NYSE%3ANKE"
+      },
+      {
+        "title": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000104/a20263qearningsrelease8-k.htm",
+        "url": "https://www.sec.gov/Archives/edgar/data/815097/000081509726000104/a20263qearningsrelease8-k.htm"
+      },
+      {
+        "title": "Carnival PLC Share Price (LSE:CCL) | AJ Bell",
+        "url": "https://www.ajbell.co.uk/market-research/LSE%3ACCL?endDate=18-07-2025&startDate=18-07-2024"
+      },
+      {
+        "title": "Federal Reserve Board - Monetary Policy",
+        "url": "https://www.federalreserve.gov/monetarypolicy.htm"
+      },
+      {
+        "title": "Schedule of Selected Releases for October 2026",
+        "url": "https://www.bls.gov/schedule/2026/10_sched.htm"
+      },
+      {
+        "title": "GDP monthly estimate, UK",
+        "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/gdpmonthlyestimateuk/july2026/pdf"
+      },
+      {
+        "title": "Q1 Trading Statement 2026/27",
+        "url": "https://www.tescoplc.com/media/mtwpdrg2/tesco_plc_q1_trading_statement_2026-27.pdf"
+      }
+    ]
+  }
+]
