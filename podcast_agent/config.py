@@ -43,8 +43,9 @@ RESEARCH_REASONING = os.environ.get("RESEARCH_REASONING") or "medium"  # low | m
 SCRIPT_MODEL = os.environ.get("SCRIPT_MODEL") or "gpt-5.5"
 
 # --- Voices (defaults: ElevenLabs premade British voices "George" and "Alice") ---
-HOST_A_NAME = os.environ.get("HOST_A_NAME") or "George"
-HOST_B_NAME = os.environ.get("HOST_B_NAME") or "Alice"
+# Optional host names. Leave empty for unnamed hosts (they never introduce themselves or each other by name).
+HOST_A_NAME = os.environ.get("HOST_A_NAME") or ""
+HOST_B_NAME = os.environ.get("HOST_B_NAME") or ""
 VOICE_A_ID = os.environ.get("VOICE_A_ID") or "JBFqnCBsd6RMkjVDRZzb"
 VOICE_B_ID = os.environ.get("VOICE_B_ID") or "Xb7hH8MSUJpSbSDYk0k2"
 TTS_MODEL = os.environ.get("TTS_MODEL") or "eleven_v3"

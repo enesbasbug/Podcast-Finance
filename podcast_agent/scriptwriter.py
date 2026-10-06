@@ -38,8 +38,12 @@ def write_script(briefing_md: str, date_window: str) -> dict:
     min_w, max_w = config.TARGET_WORDS
     instructions = (config.PROMPTS_DIR / "script.md").read_text().format(
         show_title=config.SHOW_TITLE,
-        host_a=config.HOST_A_NAME,
-        host_b=config.HOST_B_NAME,
+        names_rule=(
+            f'- Speaker "A" is called {config.HOST_A_NAME} and speaker "B" is called {config.HOST_B_NAME}; '
+            "they may introduce themselves once in the welcome."
+            if config.HOST_A_NAME and config.HOST_B_NAME
+            else "- The presenters are unnamed: they never introduce themselves and never address each other by name."
+        ),
         min_words=min_w,
         max_words=max_w,
     )

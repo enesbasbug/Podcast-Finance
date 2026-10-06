@@ -52,7 +52,7 @@ Results for the current ISO week are cached, so re-runs reuse `briefing.md` and 
 
 ## Tuning
 
-- **Voices:** pick any two voice IDs from your ElevenLabs Voice Library and set `VOICE_A_ID` and `VOICE_B_ID`. The defaults are the premade British voices George and Alice.
+- **Voices:** pick any two voice IDs from your ElevenLabs Voice Library and set `VOICE_A_ID` and `VOICE_B_ID`. Hosts are unnamed by default; set `HOST_A_NAME` and `HOST_B_NAME` if you want them to introduce themselves.
 - **Length:** set `TARGET_WORDS_MIN` and `TARGET_WORDS_MAX`. The defaults of 550–750 words give about 5 minutes (the voices speak at about 120 words a minute).
 - **Tone and structure:** edit `podcast_agent/prompts/script.md`.
 
